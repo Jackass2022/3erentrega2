@@ -1,0 +1,22 @@
+/* reset*/
+@import "utilities/reset";
+//*variables*//
+@import "utilities/variables";
+@import "utilities/mixies";
+@import "utilities/extend";
+
+/* stilos del body*/
+body{
+    background-color: $color-principal;}
+
+.contenedor {
+    background-color: $color-principal;
+
+}
+/* botones*/
+
+section div{
+    @include buttons;
+    @include hover;
+    @extend %flex;
+}
