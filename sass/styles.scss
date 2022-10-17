@@ -1,18 +1,184 @@
-/*resert*/
+/*reset*/
 @import "utilities/reset";
-//variables//
-@import "utilities/extend";
+
+//variables
 @import "utilities/mixies";
 @import "utilities/variables";
-/*estilos del body*/
-body{
-    background-color: $color-principal;
+@import "utilities/extend";
 
+body{
+/*estilos del header*/
 
 header{
     background-image: url(../img/flamitash.png);
     height: 367px;
     width: auto;
 
+.rosetext{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%{
+       transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.jackasstext {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 300px;
+    height: 70px;
+}
+
+
+.logorosa{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.containermenu{
+    @include navegacion-menu;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+ul li img{
+margin-right: 20px;
+    width: 20px;
+    height: 20px;}
+}
+/* stilos carruosel*/
+.contenedor{
+        height: 367px;
+        width: auto;
+    .carousel-item {
+        height: 30rem;
+        position: relative;
+    }
+}
+
+/* stilos de las sections*/
+section{
+h1{
+    text-align: center;
+    color: white;
 }
 }
+
+h2, h4, h5{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow:2px 2px 4px $color-principal;}
+
+p{
+    
+    color: $color-secundario;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px $color-principal;
+    text-align: center;
+}
+}
+
+
+section div img{
+    width: 50%;
+}
+
+
+/* botones*/
+section div button {
+    @include buttons;
+}
+    button:hover{
+        background-color: rgb(145, 10, 10);
+    
+    }
+
+
+
+
+
+.container {
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 100PX;
+margin-right: 100PX;
+}
+
+
+/* talles*/
+
+.talles{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* stilos del footer*/
+
+footer{
+    background-color: black;
+    border: 2px solid rgb(145, 10, 10);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: beige;
+    font-size: 20px;
+    text-align: center ;
+}
+/* media queries */
+
+@media screen and (min-width:600px){
+
+
+
+    /* stilos container*/
+    
+    .containermenu {
+        @include navegacion-menu;
+        border: 2px solid white;
+    }
+    
+    
+    /* stilos de la section*/
+    
+    section {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        padding: 0rem  1.7rem 0.5rem 1.7rem;
+        text-align: center;
+}
+    
+    
+    section div img{
+        width: 80%;
+    }
+}
+    
+    
