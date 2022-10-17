@@ -7,6 +7,7 @@
 @import "utilities/extend";
 
 body{
+    background-color: $color-principal;
 /*estilos del header*/
 
 header{
@@ -69,6 +70,7 @@ margin-right: 20px;
 }
 /* stilos carruosel*/
 .contenedor{
+    
         height: 367px;
         width: auto;
     .carousel-item {
@@ -79,13 +81,19 @@ margin-right: 20px;
 
 /* stilos de las sections*/
 section{
-h1{
+   
     text-align: center;
     color: white;
+
 }
+h1{
+    text-align: center;
+    color: $color-secundario;
+
 }
 
-h2, h4, h5{
+
+ h2, h4, h5{
     text-align: center;
     color: white;
     font-weight: bold;
@@ -98,7 +106,7 @@ p{
     text-shadow: 2px 2px 4px $color-principal;
     text-align: center;
 }
-}
+
 
 
 section div img{
@@ -181,4 +189,4 @@ footer p {
     }
 }
     
-    
+}
