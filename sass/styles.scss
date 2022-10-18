@@ -7,7 +7,9 @@
 @import "utilities/extend";
 
 body{
-    background-color: $color-principal;
+   background-image: url(../img/papelgris.jpg);
+    background-size: cover; 
+}
 /*estilos del header*/
 
 header{
@@ -55,6 +57,9 @@ header{
 
 .containermenu{
     @include navegacion-menu;
+    :hover{
+        color: $color-secundario;
+    }
 }
 
 ul{
@@ -89,13 +94,13 @@ section{
 h1{
     text-align: center;
     color: $color-secundario;
-
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
  h2, h4, h5{
     text-align: center;
-    color: white;
+    color: $color-letras;
     font-weight: bold;
     text-shadow:2px 2px 4px $color-principal;}
 
@@ -110,7 +115,7 @@ p{
 
 
 section div img{
-    width: 50%;
+    width: 80%;
 }
 
 
@@ -159,6 +164,7 @@ footer p {
     font-size: 20px;
     text-align: center ;
 }
+
 /* media queries */
 
 @media screen and (min-width:600px){
@@ -185,8 +191,6 @@ footer p {
     
     
     section div img{
-        width: 80%;
+        width: 100%;
     }
-}
-    
 }
