@@ -55,12 +55,15 @@ header{
 }
 
 
-.containermenu{
+.containermenu {
     @include navegacion-menu;
     :hover{
         color: $color-secundario;
+    
     }
+    word-spacing: 10px;
 }
+
 
 ul{
     display: flex;
