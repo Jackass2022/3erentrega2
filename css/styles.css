@@ -42,6 +42,7 @@ body {
       width: 150px;
       height: 150px; }
     body header .containermenu {
+      background-color: black;
       display: flex;
       justify-content: center;
       font-size: 20px;
@@ -49,6 +50,7 @@ body {
       word-spacing: 10px; }
       body header .containermenu nav a {
         text-decoration: none;
+        background-color: black;
         color: #91911d; }
       body header .containermenu :hover {
         color: #8c1414; }
@@ -59,7 +61,8 @@ body {
     body header ul li img {
       margin-right: 20px;
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      background-color: black; }
     body header .contenedor {
       height: 367px;
       width: auto; }
@@ -136,6 +139,7 @@ footer p {
 @media screen and (min-width: 600px) {
   /* stilos container*/
   .containermenu {
+    background-color: black;
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -143,6 +147,7 @@ footer p {
     border: 2px solid white; }
     .containermenu nav a {
       text-decoration: none;
+      background-color: black;
       color: #91911d; }
   /* stilos de la section*/
   section {
